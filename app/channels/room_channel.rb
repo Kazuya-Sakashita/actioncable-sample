@@ -18,7 +18,7 @@ class RoomChannel < ApplicationCable::Channel
   def render_message(message)
     ApplicationController.render(
       partial:"messages/message",
-      locals:{message: message}
+      locals:{ message: message }
     )
   end
 end

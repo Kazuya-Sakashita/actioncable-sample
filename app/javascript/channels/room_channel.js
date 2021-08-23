@@ -19,7 +19,7 @@ consumer.subscriptions.create("RoomChannel", {
 
   received(data) {
     const element = document.querySelector('#messages')
-    element.insertAdjacentHTML('beforeend',data['message']);
+    element.insertAdjacentHTML('beforeend',data['message'])
   },
 
   speak: function(message) {
